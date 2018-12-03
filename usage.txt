@@ -1,0 +1,10 @@
+$env:FLASK_APP = "hello" --> powershell
+flask run
+
+export FLASK_APP=hello --> mac und linux 
+flask run 
+
+python back.py
+python taxi.py
+
+curl -d '{ "Driver": "1", "Status": "inaktiv", "currentPlace":"Frankfurt"}' -H "Content-Type: application/json; charset=utf-8;"POST http://localhost:5000/api

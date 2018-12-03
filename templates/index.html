@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search for your next Ride</title>
+</head>
+<body>
+        <form method="POST" action="/">
+          <div>
+            <label >Start</label>
+            <input value="Rom" type="text" name="textfield" required>
+            <br>
+            <label>Ende</label>
+            <input value="Paris" type="text" name="textfield2" required>
+            <br>
+            <label>Ankunft</label>
+            <input type="datetime-local" value="2018-12-11T08:30:00" name="textfield3" required>
+          </div>
+          <div>
+            <label>Fahrer</label>
+            <select name="fahr">
+              <option value="1">Taxi 1</option>
+              <option value="2">Taxi 2</option>
+              <option value="3">Taxi 3</option>
+            </select>
+          </div>
+          <div>
+            <button type="submit">Suche</button>
+          </div>         
+      </form>    
+      <br><br><br><br>
+      <h1>{{waning}}</h1>
+      <h1>{{text}} {{text2}} {{text3}} {{fahr}} {{apidate}}</h1>
+      <h1>{{textelse}}</h1>
+      <br><br><br><br>
+      <a href="/track">track your driver</a>
+</body>
+
+</html>

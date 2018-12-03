@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <title>Search for your next Ride</title>
+</head>
+<body>
+<form class="col-12" method="POST" action="/track">
+    <div>
+<label>Fahrer</label>
+<select id="exampleFormControlSelect1" name="fahr">
+    <option value="1">Fahrer 1</option>
+    <option value="2">Fahrer 2</option>
+    <option value="3">Fahrer 3</option>
+</select>
+    </div>
+    <br><br><br><br>
+<button class="btn btn-info" type="submit">Suche</button>
+</form>
+    <ul>
+        <li>Status: {{status}}</li>
+        <li>Startpunkt: {{start}}</li>
+        <li>Zielpunkt: {{ziel}}</li>
+        <li>Ankunftszeit: {{time}}</li>
+    </ul>
+<a href="/">home</a>     
+</body>
+</html>
